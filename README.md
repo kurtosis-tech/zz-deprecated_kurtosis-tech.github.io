@@ -16,14 +16,14 @@ Documentation Index
 ------------------------
 
 * [Quickstart][1]
-* [Building & Running](./kurtosis-core/building-and-running.md)
-* [Testsuite Customization](./kurtosis-core/testsuite-customization.md)
-* [Debugging common failure scenarios](./kurtosis-core/debugging-failed-tests.md)
+* [Building & Running](./kurtosis-core/building-and-running)
+* [Testsuite Customization](./kurtosis-core/testsuite-customization)
+* [Debugging common failure scenarios](./kurtosis-core/debugging-failed-tests)
 * [Architecture][2]
-* [Advanced Usage](./kurtosis-core/advanced-usage.md)
-* [Running Kurtosis in CI](./kurtosis-core/running-in-ci.md)
-* [Versioning & upgrading](./kurtosis-core/versioning-and-upgrading.md)
-* [Changelog](./kurtosis-core/changelog.md)
+* [Advanced Usage](./kurtosis-core/advanced-usage)
+* [Running Kurtosis in CI](./kurtosis-core/running-in-ci)
+* [Versioning & upgrading](./kurtosis-core/versioning-and-upgrading)
+* [Changelog](./kurtosis-core/changelog)
 
 Why Kurtosis?
 -------------
@@ -47,4 +47,4 @@ docker stop $(docker ps -a --quiet --filter ancestor="YOUR-IMAGE-NAME" --format=
 ```
 
 [1]: https://github.com/kurtosis-tech/kurtosis-libs/tree/master#testsuite-quickstart
-[2]: ./kurtosis-core/architecture.md
+[2]: ./kurtosis-core/architecture
