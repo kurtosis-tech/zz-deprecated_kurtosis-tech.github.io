@@ -1,0 +1,31 @@
+version: 2.1
+
+jobs:
+  validate:
+    docker:
+      # Needed for `npm install` down below
+      - image: cimg/node:15.3.0
+    resource_class: small
+    steps:
+      - checkout
+
+      # Gotchas I discovered when writing this:
+      # - Without the '--no-pager' flag, Git will print "WARNING: Terminal is not fully functional" and not display any output
+      # - Circle has no way of getting the PR base branch, so we have to hardcode the base branch :( See: https://ideas.circleci.com/cloud-feature-requests/p/provide-env-variable-for-branch-name-targeted-by-pull-request
+      # - The --exit-code flag to git-diff returns 0 on no changes, 1 on changes
+      # - We have to use 'origin/master' rather than 'master' because Circle does a shallow checkout, and 'master' gets set to something weird and wrong that makes the check buggy
+      - run: "! git --no-pager diff --exit-code origin/master...HEAD CHANGELOG.md"
+
+      - run:
+          name: Check links in Markdown docs
+          command: |
+            sudo npm install -g markdown-link-check
+            bash .circleci/check-markdown-links.sh
+
+workflows:
+  build:
+    jobs:
+      - validate:
+          filters:
+            branches:
+              ignore: master
