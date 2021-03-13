@@ -2,9 +2,9 @@ set -euo pipefail
 script_dirpath="$(cd "$(dirname "${0}")" && pwd)"
 root_dirpath="$(dirname "${script_dirpath}")"
 
-# We can use relative syntax to specify kurtosis-core/kurtosis-libs in URLs because everything gets
-# published to the same docs.kurtosistech.com domain, but when checking Markdown links we need to expand
-# the full domain name
+# We can use relative syntax to specify kurtosis-core/kurtosis-libs links in the Markdown (e.g. "./kurtosis-core/architecture")
+# because everything gets published to the same docs.kurtosistech.com domain, but we need to expand to the full URL for the Markdown
+# link checker
 config_filepath="$(mktemp)"
 cat << EOF > "${config_filepath}"
 {
