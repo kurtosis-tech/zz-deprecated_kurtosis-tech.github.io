@@ -18,6 +18,7 @@ Documentation Index
 * [Quickstart][1]
 * [Building & Running](./kurtosis-core/building-and-running)
 * [Testsuite Customization](./kurtosis-core/testsuite-customization)
+* [Lib class/function documentation](./kurtosis-libs/lib-documentation)
 * [Debugging common failure scenarios](./kurtosis-core/debugging-failed-tests)
 * [Architecture][2]
 * [Advanced Usage](./kurtosis-core/advanced-usage)
