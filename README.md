@@ -23,8 +23,8 @@ Documentation Index
 * [Architecture][2]
 * [Advanced Usage](./kurtosis-core/advanced-usage)
 * [Running Kurtosis in CI](./kurtosis-core/running-in-ci)
-* [Versioning & upgrading](./kurtosis-core/versioning-and-upgrading)
-* [Changelog](./kurtosis-core/changelog)
+* [Versioning & upgrading](./kurtosis-libs/versioning-and-upgrading)
+* [Changelog](./kurtosis-libs/changelog)
 
 Why Kurtosis?
 -------------
