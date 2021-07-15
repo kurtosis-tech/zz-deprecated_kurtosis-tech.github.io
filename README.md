@@ -5,24 +5,25 @@
 
 Getting Started
 ---------------
-You have two paths you can start with:
-
-* For those who like to jump in and see things running, head over to [the quickstart instructions][1]
-* For those who prefer to start at a high level, check out [the Kurtosis architecture docs][2]
+For those who like to jump in and see things running, head over to [the quickstart instructions][quickstart]. For those who prefer to start at a high level, start with [the Kurtosis architecture docs][architecture].
 
 For Q&A, head over to the [Kurtosis Discord](https://discord.gg/6Jjp9c89z9) server.
 
-Documentation Index
-------------------------
-
-* [Quickstart][1]
-* [Building & Running](./kurtosis-core/building-and-running)
-* [Testsuite Customization](./kurtosis-core/testsuite-customization)
-* [Lib class/function documentation](./kurtosis-libs/lib-documentation)
+* [Quickstart][quickstart]
 * [Debugging common failure scenarios](./kurtosis-core/debugging-failed-tests)
-* [Architecture][2]
-* [Advanced Usage](./kurtosis-core/advanced-usage)
+* [Testsuite Customization](./kurtosis-core/testsuite-customization)
+* [Architecture][architecture]
+
+Beyond The Basics
+-----------------
+* [Documentation for Kurtosis Client](./kurtosis-client/lib-documentation), which handles manipulating your testnet
+* [Documentation for Kurtosis Libs](./kurtosis-libs/lib-documentation), which handles all things testing
+* [Building & Running](./kurtosis-core/building-and-running)
 * [Running Kurtosis in CI](./kurtosis-core/running-in-ci)
+* [Advanced Usage](./kurtosis-core/advanced-usage)
+
+Upgrading Kurtosis
+------------------
 * [Versioning & upgrading](./kurtosis-libs/versioning-and-upgrading)
 * [Changelog](./kurtosis-libs/changelog)
 
@@ -47,5 +48,5 @@ docker container ls    # See which Docker containers are left around - these wil
 docker stop $(docker ps -a --quiet --filter ancestor="YOUR-IMAGE-NAME" --format="{{.ID}}")
 ```
 
-[1]: https://github.com/kurtosis-tech/kurtosis-libs/tree/master#testsuite-quickstart
-[2]: ./kurtosis-core/architecture
+[quickstart]: https://github.com/kurtosis-tech/kurtosis-libs/tree/master#testsuite-quickstart
+[architecture]: ./kurtosis-core/architecture
