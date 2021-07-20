@@ -17,15 +17,15 @@ For Q&A, head over to the [Kurtosis Discord](https://discord.gg/6Jjp9c89z9) serv
 Beyond The Basics
 -----------------
 * [Documentation for Kurtosis Client](./kurtosis-client/lib-documentation), which handles manipulating your testnet
-* [Documentation for Kurtosis Libs](./kurtosis-libs/lib-documentation), which handles all things testing
+* [Documentation for Kurtosis Testing](./kurtosis-testsuite-api-lib/lib-documentation), which handles all things testing
 * [Building & Running](./kurtosis-core/building-and-running)
 * [Running Kurtosis in CI](./kurtosis-core/running-in-ci)
 * [Advanced Usage](./kurtosis-core/advanced-usage)
 
 Upgrading Kurtosis
 ------------------
-* [Versioning & upgrading](./kurtosis-libs/versioning-and-upgrading)
-* [Changelog](./kurtosis-libs/changelog)
+* [Versioning & upgrading](./kurtosis-testsuite-api-lib/versioning-and-upgrading)
+* [Changelog](./kurtosis-testsuite-api-lib/changelog)
 
 Why Kurtosis?
 -------------
