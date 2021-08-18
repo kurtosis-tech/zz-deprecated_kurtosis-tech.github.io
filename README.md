@@ -10,17 +10,17 @@ For those who like to jump in and see things running, head over to [the quicksta
 For Q&A, head over to the [Kurtosis Discord](https://discord.gg/6Jjp9c89z9) server.
 
 * [Quickstart][quickstart]
-* [Debugging common failure scenarios](./kurtosis-core/debugging-failed-tests)
-* [Testsuite Customization](./kurtosis-core/testsuite-customization)
+* [Debugging common failure scenarios](./debugging-failed-tests.md)
+* [Testsuite Customization](./testsuite-customization.md)
 * [Architecture][architecture]
 
 Beyond The Basics
 -----------------
 * [Documentation for Kurtosis Client](./kurtosis-client/lib-documentation), which handles manipulating your testnet
 * [Documentation for Kurtosis Testing](./kurtosis-testsuite-api-lib/lib-documentation), which handles all things testing
-* [Building & Running](./kurtosis-core/building-and-running)
-* [Running Kurtosis in CI](./kurtosis-core/running-in-ci)
-* [Advanced Usage](./kurtosis-core/advanced-usage)
+* [Building & Running](./building-and-running.md)
+* [Running Kurtosis in CI](./running-in-ci.md)
+* [Advanced Usage](./advanced-usage.md)
 
 Upgrading Kurtosis
 ------------------
@@ -49,4 +49,4 @@ docker stop $(docker ps -a --quiet --filter ancestor="YOUR-IMAGE-NAME" --format=
 ```
 
 [quickstart]: https://github.com/kurtosis-tech/kurtosis-testsuite-starter-pack/tree/master#testsuite-quickstart
-[architecture]: ./kurtosis-core/architecture
+[architecture]: ./architecture.md
