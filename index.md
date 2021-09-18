@@ -20,6 +20,7 @@ Beyond The Basics
 * [Building & Running](./building-and-running.md)
 * [Running Kurtosis in CI](./running-in-ci.md)
 * [Advanced Usage](./advanced-usage.md)
+* [Kurtosis Sandbox](./sandbox.md)
 
 Upgrading Kurtosis
 ------------------
