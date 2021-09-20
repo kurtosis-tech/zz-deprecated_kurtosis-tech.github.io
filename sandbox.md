@@ -26,6 +26,8 @@ kurtosis sandbox
 loadLambdaResult = await networkCtx.loadLambda("eth-lambda", "kurtosistech/ethereum-kurtosis-lambda:0.1.4", "{}")
 lambdaCtx = loadLambdaResult.value
 executeResult = await lambdaCtx.execute("{}")
+executeResultObj = JSON.parse(executeResult.value)
+console.log(executeResultObj)
 ```
 
 ---
