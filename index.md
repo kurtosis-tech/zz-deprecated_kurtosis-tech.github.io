@@ -19,8 +19,9 @@ Beyond The Basics
 * [Documentation for Kurtosis Testing](./kurtosis-testsuite-api-lib/lib-documentation), which handles all things testing
 * [Building & Running](./building-and-running.md)
 * [Running Kurtosis in CI](./running-in-ci.md)
-* [Advanced Usage](./advanced-usage.md)
 * [Kurtosis Sandbox](./sandbox.md)
+* [Kurtosis Lambdas](./lambdas.md)
+* [Advanced Usage](./advanced-usage.md)
 
 Upgrading Kurtosis
 ------------------
