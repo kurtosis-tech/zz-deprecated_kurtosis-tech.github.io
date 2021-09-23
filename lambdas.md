@@ -1,7 +1,7 @@
 Kurtosis Lambdas
 ================
 ### What's a Lambda?
-You might want to provide your testnet definition logic to a wider audience (e.g. your users), or you might want to consume someone else's testnet definition logic. Kurtosis' solution to this are "Lambdas", which are packages of code that execute against the Kurtosis testnet. You can think of a Lambda as a language-agnostic library that executes in the Kurtosis environment. 
+You might want to provide your testnet definition logic to a wider audience (e.g. your users), or you might want to consume someone else's testnet definition logic. Kurtosis' solution to this are "Lambdas", which are packages of code that execute against the Kurtosis testnet. You can think of a Lambda as a language-agnostic library that executes in the Kurtosis environment. To start writing your own Lambda, follow the instructions on the [Lambda Starter Pack](https://github.com/kurtosis-tech/kurtosis-lambda-starter-pack).
 
 ### Uses
 The current Lambdas we know about:
