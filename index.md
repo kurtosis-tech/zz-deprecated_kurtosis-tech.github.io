@@ -49,5 +49,5 @@ docker container ls    # See which Docker containers are left around - these wil
 docker stop $(docker ps -a --quiet --filter ancestor="YOUR-IMAGE-NAME" --format="{{.ID}}")
 ```
 
-[quickstart]: https://github.com/kurtosis-tech/kurtosis-onboarding-experience/tree/master#kurtosis-ethereum-testsuite-tutorial
+[quickstart]: https://github.com/kurtosis-tech/kurtosis-onboarding-experience/tree/master#kurtosis-ethereum-quickstart
 [architecture]: ./architecture.md
