@@ -4,8 +4,26 @@ Often, Kurtosis is used for its testing ability: run a testsuite, where each tes
 
 To start a Kurtosis sandbox, first install the Kurtosis CLI:
 
+Homebrew:
 ```
 brew install kurtosis-tech/tap/kurtosis
+```
+
+apt:
+```
+echo "deb [trusted=yes] https://1rRcWo-cTcNiKak7X5tkD7slaIg4GDXrdU@apt.fury.io/kurtosis-tech/ /" | sudo tee /etc/apt/sources.list.d/kurtosis.list
+sudo apt update
+sudo apt install kurtosis
+```
+
+yum:
+```
+echo '[kurtosis]
+name=Kurtosis
+baseurl=https://1rRcWo-cTcNiKak7X5tkD7slaIg4GDXrdU@yum.fury.io/kurtosis-tech/
+enabled=1
+gpgcheck=0' | sudo tee /etc/yum.repos.d/kurtosis.repo
+sudo yum install kurtosis
 ```
 
 Next, run:
