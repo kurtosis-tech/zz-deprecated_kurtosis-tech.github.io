@@ -2,6 +2,10 @@ Running in CI
 =============
 Running Kurtosis on your local machine is nice, but the real power of the platform comes when it's executed as part of CI. This guide will walk you through setting up Kurtosis in your CI environment.
 
+Installing The CLI
+-------------------
+You'll need the Kurtosis CLI inside your CI environment. This can be accomplished by following [the installation instructions][installation] for whichever package manager your CI container uses.
+
 Machine-to-Machine Auth
 -----------------------
 While it's fine to prompt a user for their username and password when Kurtosis is run on the local machine, this method is insecure when executing Kurtosis on CI. Fortunately, our auth system provides [a system for handling this called "machine-to-machine auth"](https://auth0.com/docs/flows/client-credentials-flow). In the machine-to-machine flow, a client ID and a client secret are stored within the CI environment's secrets and passed in to every CI job. Kurtosis uses these credentials to retrieve a token from the auth provider, which allows Kurtosis execution to proceed.
@@ -35,3 +39,5 @@ This allows you to require untrusted code to pass a review before it runs (there
 ---
 
 [Back to index](https://docs.kurtosistech.com)
+
+[installation]: ./installation.md

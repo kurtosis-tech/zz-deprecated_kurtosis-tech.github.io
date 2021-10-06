@@ -9,6 +9,7 @@ For those who like to jump in and see things running, head over to [the quicksta
 For Q&A, head over to the [Kurtosis Discord](https://discord.gg/6Jjp9c89z9) server.
 
 * [Quickstart][quickstart]
+* [Installation](./installation.md)
 * [Debugging common failure scenarios](./debugging-failed-tests.md)
 * [Testsuite Customization](./testsuite-customization.md)
 * [Architecture][architecture]
