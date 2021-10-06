@@ -24,6 +24,9 @@ gpgcheck=0' | sudo tee /etc/yum.repos.d/kurtosis.repo
 sudo yum install kurtosis
 ```
 
+### deb, rpm, and apk
+Download the appropriate artifact from [the release artifacts page][release-artifacts].
+
 Once the CLI is installed, [the quickstart is a great place to get started][quickstart].
 
 ---
@@ -32,3 +35,4 @@ Once the CLI is installed, [the quickstart is a great place to get started][quic
 
 [lib-documentation]: ./kurtosis-client/lib-documentation
 [quickstart]: https://github.com/kurtosis-tech/kurtosis-onboarding-experience/tree/master#kurtosis-ethereum-quickstart
+[release-artifacts]: https://github.com/kurtosis-tech/kurtosis-core-release-artifacts/releases
