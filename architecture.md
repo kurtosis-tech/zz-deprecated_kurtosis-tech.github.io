@@ -33,8 +33,7 @@ This architecture has the following components:
 
 * **Testnet:** The network of services being tested (one per test)
 * **Service:** A Dockerized service forming part of a testnet
-* **Initializer:** The Docker container that coordinates execution of the testsuite
-* **kurtosis.sh:** The Bash script that launches the initializer container, and the entrypoint for running Kurtosis
+* **Kurtosis CLI:** The CLI that coordinates the execution of a testsuite, and the entrypoint for running Kurtosis
 * **Kurtosis API:** The Docker sidecar container (one per test) that handles initializing, manipulating, and tearing down testnets
 * **Testsuite:** The Docker container (one per test) that holds the user's custom logic for starting the custom services forming the networks being tested, as well as the logic for the tests to run
 * **Kurtosis Client:** A library in the user's language of choice that abstracts away communication with the Kurtosis API for testnet initialization, manipulation, and teardown
@@ -42,17 +41,17 @@ This architecture has the following components:
 The test phases proceed in the following order for each test:
 
 1. **Setup:**
-    1. The initializer creates a new Docker subnet to contain the Kurtosis API container, testsuite container, and testnet services
+    1. The CLI creates a new Docker subnet to contain the Kurtosis API container, testsuite container, and testnet services
     1. The API container and testsuite containers are launched
     1. As part of launch, the Kurtosis client library instructs the API container what the testnet looks like
     1. The API container instantiates the testnet as instructed
 1. **Perturbation:** The test, running inside the testsuite container, makes calls against the network
 1. **Validation:** The test asserts the expected responses
 1. **Teardown:**
-    1. The test completes and reports its status back to the initializer
+    1. The test completes and reports its status back to the CLI
     1. The API container stops the testnet containers
     1. The API container and testsuite container exit
-    1. The initializer tears down the Docker subnet created for the test
+    1. The CLI tears down the Docker subnet created for the test
 
 Key features:
 
