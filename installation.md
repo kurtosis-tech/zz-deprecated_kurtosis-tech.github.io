@@ -1,6 +1,6 @@
 Installation
 ============
-Interacting with Kurtosis is done via a CLI. The following methods are currently supported (code snippets can be copied by hovering and clicking the clipboard in the top-right):
+Interacting with Kurtosis is done via a CLI. The following methods are currently supported:
 
 ### Homebrew
 ```

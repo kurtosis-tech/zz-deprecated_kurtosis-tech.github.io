@@ -34,7 +34,7 @@ Finally, you'll need to tell Kurtosis how to initialize your testsuite. All test
 You should create your own `TestSuiteConfigurator` implementation now, to tell Kurtosis how to create your testsuite.
 
 ### Main Function
-With your testsuite configurator complete, your only remaining step is to make sure it's getting used. When you bootstrapped your testsuite repo, you will have received an entrypoint main function that runs the testsuite executor [like this Go example](https://github.com/kurtosis-tech/kurtosis-testsuite-starter-pack/blob/master/golang/testsuite/main.go). You will also have received a Dockerfile, for packaging that main CLI into a Docker image ([Go example](https://github.com/kurtosis-tech/kurtosis-testsuite-starter-pack/blob/develop/golang/testsuite/Dockerfile)). 
+With your testsuite configurator complete, your only remaining step is to make sure it's getting used. When you bootstrapped your testsuite repo, you will have received an entrypoint main function that runs the testsuite executor [like this Go example](https://github.com/kurtosis-tech/kurtosis-testsuite-starter-pack/blob/master/golang/testsuite/main.go). You will also have received a Dockerfile, for packaging that main CLI into a Docker image ([Go example](https://github.com/kurtosis-tech/kurtosis-testsuite-starter-pack/blob/master/golang/testsuite/Dockerfile)). 
 
 What `build-and-run.sh` actually does during its "build" phase is compile the main entrypoint CLI and package it into an executable Docker image. In order for your testsuite to get run, you just need to make sure this main entrypoint CLI is using your `TestsuiteConfigurator` by slotting in your configurator where indicated.
 
