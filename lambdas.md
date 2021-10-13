@@ -11,7 +11,7 @@ Some hypothetical Lambdas that could be built:
 * Mutate the state of the network
 
 ### Running Lambdas
-The easiest way to run a Lambda is in the [sandbox][sandbox].
+The easiest way to run a Lambda is via `kurtosis lambda exec YOUR_LAMBDA_IMAGE`. You can run `kurtosis lambda exec -h` for detailed information about the flags that can be passed in.
 
 ### Known Lambdas
 The current Lambdas we know about:
