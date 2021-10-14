@@ -9,7 +9,7 @@ brew install kurtosis-tech/tap/kurtosis-cli
 
 ### apt
 ```
-echo "deb [trusted=yes] https://1rRcWo-cTcNiKak7X5tkD7slaIg4GDXrdU@apt.fury.io/kurtosis-tech/ /" | sudo tee /etc/apt/sources.list.d/kurtosis.list
+echo "deb [trusted=yes] https://apt.fury.io/kurtosis-tech/ /" | sudo tee /etc/apt/sources.list.d/kurtosis.list
 sudo apt update
 sudo apt install kurtosis-cli
 ```
@@ -18,7 +18,7 @@ sudo apt install kurtosis-cli
 ```
 echo '[kurtosis]
 name=Kurtosis
-baseurl=https://1rRcWo-cTcNiKak7X5tkD7slaIg4GDXrdU@yum.fury.io/kurtosis-tech/
+baseurl=https://yum.fury.io/kurtosis-tech/
 enabled=1
 gpgcheck=0' | sudo tee /etc/yum.repos.d/kurtosis.repo
 sudo yum install kurtosis-cli
