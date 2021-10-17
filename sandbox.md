@@ -10,16 +10,16 @@ kurtosis sandbox
 
 The Javascript REPL that starts will 1) have `await` available and 2) have a `networkCtx` variable instance of the `NetworkContext` object from [the documentation][lib-documentation].
 
-E.g. starting an Ethereum network using [the Ethereum Lambda](https://github.com/kurtosis-tech/ethereum-kurtosis-lambda):
+E.g. starting an Ethereum network using [the Ethereum module](https://github.com/kurtosis-tech/ethereum-kurtosis-module):
 
 ![Starting an Ethereum network](./images/starting-eth-network-in-kurtosis-interactive.png)
 
 The commands from above, for copy-pasting:
 ```
 kurtosis sandbox
-loadLambdaResult = await networkCtx.loadLambda("eth-lambda", "kurtosistech/ethereum-kurtosis-lambda:0.1.4", "{}")
-lambdaCtx = loadLambdaResult.value
-executeResult = await lambdaCtx.execute("{}")
+loadModuleResult = await networkCtx.loadModule("my-module", "kurtosistech/ethereum-kurtosis-module", "{}")
+moduleCtx = loadModuleResult.value
+executeResult = await moduleCtx.execute("{}")
 executeResultObj = JSON.parse(executeResult.value)
 console.log(executeResultObj)
 ```
