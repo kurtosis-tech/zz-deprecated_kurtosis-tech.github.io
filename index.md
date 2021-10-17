@@ -21,7 +21,7 @@ Beyond The Basics
 * [Building & Running](./building-and-running.md)
 * [Running Kurtosis in CI](./running-in-ci.md)
 * [Kurtosis Sandbox](./sandbox.md)
-* [Kurtosis Lambdas](./lambdas.md)
+* [Kurtosis Modules](./modules.md)
 * [Advanced Usage](./advanced-usage.md)
 
 Upgrading Kurtosis
