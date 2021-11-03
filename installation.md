@@ -29,6 +29,28 @@ Download the appropriate artifact from [the release artifacts page][release-arti
 
 Once the CLI is installed, [the quickstart is a great place to get started][quickstart].
 
+
+## Upgrading Kurtosis CLI
+The Kurtosis CLI is constantly being improved, and it is the best to use the latest released version.
+
+### Homebrew
+```
+brew upgrade kurtosis-tech/tap/kurtosis-cli
+```
+
+### apt
+```
+apt install --only-upgrade kurtosis-cli
+```
+
+### yum
+```
+yum upgrade kurtosis-cli
+```
+
+### deb, rpm, and apk
+Download the appropriate artifact from [the release artifacts page][release-artifacts].
+
 ---
 
 [Back to index](https://docs.kurtosistech.com)
