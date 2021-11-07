@@ -1,7 +1,9 @@
-Installation
-============
+Installing & Upgrading
+======================
 Interacting with Kurtosis is done via a CLI. The following methods are currently supported:
 
+Installation
+------------
 ### Homebrew
 ```
 brew install kurtosis-tech/tap/kurtosis-cli
@@ -30,8 +32,9 @@ Download the appropriate artifact from [the release artifacts page][release-arti
 Once the CLI is installed, [the quickstart is a great place to get started][quickstart].
 
 
-## Upgrading Kurtosis CLI
-The Kurtosis CLI is constantly being improved, and it is the best to use the latest released version.
+Upgrading
+---------
+You can check the version of the CLI you're running with `kurtosis version`. To upgrade to latest:
 
 ### Homebrew
 ```
