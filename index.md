@@ -9,25 +9,27 @@ For those who like to jump in and see things running, head over to [the quicksta
 For Q&A, head over to the [Kurtosis Discord](https://discord.gg/6Jjp9c89z9) server.
 
 * [Quickstart][quickstart]
-* [Installation](./installation.md)
+* [Installation][installation-and-upgrading]
 * [Debugging common failure scenarios](./debugging-failed-tests.md)
 * [Testsuite Customization](./testsuite-customization.md)
 * [Architecture][architecture]
 
 Beyond The Basics
 -----------------
-* [Documentation for Kurtosis Client](./kurtosis-client/lib-documentation), which handles manipulating your testnet
-* [Documentation for Kurtosis Testing](./kurtosis-testsuite-api-lib/lib-documentation), which handles all things testing
 * [Building & Running](./building-and-running.md)
 * [Running Kurtosis in CI](./running-in-ci.md)
 * [Kurtosis Sandbox](./sandbox.md)
 * [Kurtosis Modules](./modules.md)
 * [Advanced Usage](./advanced-usage.md)
+* [Kurtosis Core API Documentation](./kurtosis-core/lib-documentation)
+* [Kurtosis Engine API Documentation](./kurtosis-engine-server/lib-documentation)
 
 Upgrading Kurtosis
 ------------------
-* [Versioning & upgrading](./kurtosis-testsuite-api-lib/versioning-and-upgrading)
-* [Changelog](./kurtosis-testsuite-api-lib/changelog)
+* [Upgrading][installation-and-upgrading]
+* [Kurtosis CLI Changelog](./kurtosis-cli/changelog)
+* [Kurtosis Core Changelog](./kurtosis-core/changelog)
+* [Kurtosis Engine Changelog](./kurtosis-engine-server/changelog)
 
 Why Kurtosis?
 -------------
@@ -52,3 +54,4 @@ docker stop $(docker ps -a --quiet --filter ancestor="YOUR-IMAGE-NAME" --format=
 
 [quickstart]: https://github.com/kurtosis-tech/kurtosis-onboarding-experience/tree/master#kurtosis-ethereum-quickstart
 [architecture]: ./architecture.md
+[installation-and-upgrading]: ./installation.md
