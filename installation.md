@@ -34,7 +34,7 @@ Once the CLI is installed, [the quickstart is a great place to get started][quic
 
 Upgrading
 ---------
-You can check the version of the CLI you're running with `kurtosis version`. To upgrade to latest:
+You can check the version of the CLI you're running with `kurtosis version`. To upgrade to latest, check [the changelog to see if there are any breaking changes][cli-changelog] and follow these steps:
 
 ### Homebrew
 ```
@@ -61,3 +61,4 @@ Download the appropriate artifact from [the release artifacts page][release-arti
 [lib-documentation]: ./kurtosis-client/lib-documentation
 [quickstart]: https://github.com/kurtosis-tech/kurtosis-onboarding-experience/tree/master#kurtosis-ethereum-quickstart
 [release-artifacts]: https://github.com/kurtosis-tech/kurtosis-cli-release-artifacts/releases
+[cli-changelog]: ./kurtosis-cli/changelog
