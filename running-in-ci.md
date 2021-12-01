@@ -7,8 +7,16 @@ Step One: Installing The CLI
 You'll need the Kurtosis CLI inside your CI environment. This can be accomplished by following [the installation instructions][installation] for whichever package manager your CI container uses. E.g. if you're using Github Actions with an Ubuntu executor, you'd add the instructions for installing the Kurtosis CLI via the `apt` package manager to your CI config file.
 
 Step Two: Starting The Engine
--------------------
+-----------------------------
 You'll need the Kurtosis engine to be running to use [the engine API][engine-api-docs] (which you're likely using in your tests that use Kurtosis). Add `kurtosis engine start` in your CI config file after the CLI installation commands so that the engine API commands in your tests work properly.
+
+Step Three: Run Your Custom Logic
+---------------------------------
+This will be specific to whatever you want to run in CI. E.g. if you have Javascript Mocha tests that use Kurtosis, you'd put that in your CI config file after installing the Kurtosis CLI & starting the engine.
+
+Example
+-------
+[This is the relevant section of the CircleCI config file used by the testsuite used in the onboarding repo.](https://github.com/kurtosis-tech/onboarding-ethereum-testsuite/blob/master/.circleci/config.yml#L33)
 
 ---
 
