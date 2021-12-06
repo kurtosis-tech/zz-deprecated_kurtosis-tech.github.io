@@ -34,7 +34,16 @@ Once the CLI is installed, [the quickstart is a great place to get started][quic
 
 Upgrading
 ---------
-You can check the version of the CLI you're running with `kurtosis version`. To upgrade to latest, check [the changelog to see if there are any breaking changes][cli-changelog] and follow these steps:
+You can check the version of the CLI you're running with `kurtosis version`. To upgrade to latest, check [the changelog to see if there are any breaking changes][cli-changelog] and follow the steps below. 
+
+NOTE: if you're upgrading the CLI's minor version (the `Y` in a `X.Y.Z` version), you may need to restart your Kurtosis engine after the upgrade. If this is needed, the Kurtosis CLI will prompt you with an error like so:
+```
+The engine server API version that the CLI expects, 1.7.4, doesn't match the running engine server API version, 1.6.8; this would cause broken functionality so you'll need to restart the engine to get the correct version by running 'kurtosis engine restart'
+```
+The fix is to restart the engine like so:
+```
+kurtosis engine restart
+```
 
 ### Homebrew
 ```
