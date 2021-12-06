@@ -8,6 +8,8 @@ To write your own module, visit [the module starter pack repo](https://github.co
 ### Uses
 Some hypothetical modules that could be built:
 
+* Start a network of blockchain nodes
+* Start a cluster of Cassandra nodes
 * Occasionally kill services in the network (like Netflix' [Chaos Monkey](https://netflix.github.io/chaosmonkey/))
 * Repartition the network periodically
 * Mutate the state of the network
