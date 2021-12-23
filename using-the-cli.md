@@ -75,6 +75,9 @@ kurtosis clean
 
 To remove _everything_ in the Kurtosis engine, add the `-a`/`--all` flag.
 
+---
+
+[Back to index](https://docs.kurtosistech.com)
 
 <!-- Only links below this point -->
 [modules]: ./modules.md
