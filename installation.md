@@ -1,6 +1,6 @@
 Installing & Upgrading
 ======================
-Interacting with Kurtosis is done via a CLI. The following methods are currently supported:
+[Interacting with Kurtosis][using-the-cli] is done via a CLI. The following methods are currently supported:
 
 Installation
 ------------
@@ -67,6 +67,7 @@ Download the appropriate artifact from [the release artifacts page][release-arti
 
 [Back to index](https://docs.kurtosistech.com)
 
+[using-the-cli]: ./using-the-cli.md
 [lib-documentation]: ./kurtosis-client/lib-documentation
 [quickstart]: https://github.com/kurtosis-tech/kurtosis-onboarding-experience/tree/master#kurtosis-ethereum-quickstart
 [release-artifacts]: https://github.com/kurtosis-tech/kurtosis-cli-release-artifacts/releases
