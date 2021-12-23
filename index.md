@@ -10,13 +10,12 @@ For Q&A, head over to the [Kurtosis Discord](https://discord.gg/6Jjp9c89z9) serv
 
 * [Quickstart][quickstart]
 * [Installation][installation-and-upgrading]
+* [Using the CLI][using-the-cli]
 * [Debugging common failure scenarios](./debugging-failed-tests.md)
-* [Testsuite Customization](./testsuite-customization.md)
 * [Architecture][architecture]
 
 Beyond The Basics
 -----------------
-* [Building & Running](./building-and-running.md)
 * [Running Kurtosis in CI](./running-in-ci.md)
 * [Kurtosis Sandbox](./sandbox.md)
 * [Kurtosis Modules](./modules.md)
@@ -55,3 +54,4 @@ docker stop $(docker ps -a --quiet --filter ancestor="YOUR-IMAGE-NAME" --format=
 [quickstart]: https://github.com/kurtosis-tech/kurtosis-onboarding-experience/tree/master#kurtosis-ethereum-quickstart
 [architecture]: ./architecture.md
 [installation-and-upgrading]: ./installation.md
+[using-the-cli]: ./using-the-cli.md
