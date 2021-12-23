@@ -77,5 +77,5 @@ To remove _everything_ in the Kurtosis engine, add the `-a`/`--all` flag.
 
 
 <!-- Only links below this point -->
-[modules]: ./modules
-[cli-installation]: ./installation
+[modules]: ./modules.md
+[cli-installation]: ./installation.md

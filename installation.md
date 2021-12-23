@@ -67,7 +67,7 @@ Download the appropriate artifact from [the release artifacts page][release-arti
 
 [Back to index](https://docs.kurtosistech.com)
 
-[using-the-cli]: ./using-the-cli
+[using-the-cli]: ./using-the-cli.md
 [lib-documentation]: ./kurtosis-client/lib-documentation
 [quickstart]: https://github.com/kurtosis-tech/kurtosis-onboarding-experience/tree/master#kurtosis-ethereum-quickstart
 [release-artifacts]: https://github.com/kurtosis-tech/kurtosis-cli-release-artifacts/releases
