@@ -26,9 +26,10 @@ You can run `kurtosis module exec -h` for more detailed information about the fl
 ### Known Modules
 The current modules we know about:
 
-* [Ethereum Module](https://github.com/kurtosis-tech/ethereum-kurtosis-module): Starts an Ethereum network in Kurtosis
+* [Ethereum 1 Module](https://github.com/kurtosis-tech/ethereum-kurtosis-module): Starts an Ethereum 1 network in Kurtosis
+* [Ethereum 2 Merge Module](https://github.com/kurtosis-tech/eth2-merge-kurtosis-module): Starts an Ethereum 1 network, and then tests the merge to Ethereum 2
 * [NEAR Module](https://github.com/kurtosis-tech/near-kurtosis-module): Starts a NEAR blockchain and accompanying wallet, explorer, etc. in Kurtosis
-* [Datastore Army Module](https://github.com/kurtosis-tech/datastore-army-module): Starts multiple [datastore services](https://github.com/kurtosis-tech/example-microservices); used for demonstration purposes
+* [Datastore Army Module](https://github.com/kurtosis-tech/datastore-army-module): An example module that we built which starts multiple [datastore services](https://github.com/kurtosis-tech/example-microservices); used for demonstration purposes
 
 
 ### Technical Details
