@@ -8,7 +8,7 @@ To start a Kurtosis sandbox, [install the Kurtosis CLI](./installation.md) and r
 kurtosis sandbox
 ```
 
-The Javascript REPL that starts will 1) have `await` available and 2) have a `networkCtx` variable instance of the `NetworkContext` object from [the documentation][lib-documentation].
+The Javascript REPL that starts will 1) have `await` available and 2) have a `enclaveCtx` variable instance of the `EnclaveContext` object from [the documentation][enclavecontext].
 
 E.g. starting an Ethereum network using [the Ethereum module](https://github.com/kurtosis-tech/ethereum-kurtosis-module):
 
@@ -28,4 +28,4 @@ console.log(executeResultObj)
 
 [Back to index](https://docs.kurtosistech.com)
 
-[lib-documentation]: ./kurtosis-client/lib-documentation
+[enclavecontext]: ./kurtosis-core/lib-documentation#enclavecontext
