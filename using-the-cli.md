@@ -2,6 +2,21 @@ Using the CLI
 =============
 The [Kurtosis CLI][cli-installation] is the main way you will interact with Kurtosis. This document will walk you through some common CLI workflows.
 
+### Initialize configuration
+This is a command to initialize the CLI configuration 
+This command has a mandatory positional argument that has to be set to consent sending metrics to improve the product
+
+```
+Run the following command to Initialize the configuration accepting sending metrics
+
+kurtosis config init send-metrics
+
+or run this one to reject sending metrics
+
+kurtosis config init dont-send-metrics
+
+```
+
 ### Create an enclave
 The environments in Kurtosis that house your containers are called "enclaves". They are isolated from each other, to ensure they don't interfere with each other. To create a new, empty enclave, run:
 
