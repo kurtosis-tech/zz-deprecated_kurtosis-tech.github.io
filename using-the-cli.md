@@ -70,6 +70,9 @@ kurtosis service logs $THE_ENCLAVE_ID $THE_SERVICE_ID
 
 The service ID is printed upon inspecting an enclave.
 
+The `-f` flag can also be added to continue following the logs, similar to `tail -f`.
+
+
 ### Run commands inside a service container
 You might need to get access to a shell on a given service container. To do so, run:
 
