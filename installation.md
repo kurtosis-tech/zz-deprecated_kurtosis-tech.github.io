@@ -31,6 +31,11 @@ Download the appropriate artifact from [the release artifacts page][release-arti
 
 Once the CLI is installed, [the quickstart is a great place to get started][quickstart].
 
+Metrics Election
+----------------
+The first time you run the Kurtosis CLI, you'll be asked to make an election about whether you'd like to send anonymized product analytics metrics. Our reasons for doing this, and how we strive to do this ethically, can be found [here](./metrics-philosophy.md).
+
+If you're running the CLI in a CI environment, see [these instructions](./running-in-ci.md) to see how to make the metrics election non-interactively.
 
 Upgrading
 ---------

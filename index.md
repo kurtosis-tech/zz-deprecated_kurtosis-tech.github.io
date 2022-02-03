@@ -10,6 +10,7 @@ For Q&A, head over to the [Kurtosis Discord](https://discord.gg/6Jjp9c89z9) serv
 
 * [Quickstart][quickstart]
 * [Installation][installation-and-upgrading]
+* [Our Metrics Philosophy][metrics-philosophy]
 * [Using the CLI][using-the-cli]
 * [Debugging common failure scenarios](./debugging-failed-tests.md)
 * [Architecture][architecture]
@@ -52,6 +53,7 @@ docker stop $(docker ps -a --quiet --filter ancestor="YOUR-IMAGE-NAME" --format=
 ```
 
 [quickstart]: https://github.com/kurtosis-tech/kurtosis-onboarding-experience/tree/master#kurtosis-ethereum-quickstart
+[metrics-philosophy]: ./metrics-philosophy.md
 [architecture]: ./architecture.md
 [installation-and-upgrading]: ./installation.md
 [using-the-cli]: ./using-the-cli.md
