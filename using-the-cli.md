@@ -3,7 +3,7 @@ Using the CLI
 The [Kurtosis CLI][cli-installation] is the main way you will interact with Kurtosis. This document will walk you through some common CLI workflows.
 
 ### Initialize configuration
-When the Kurtosis CLI is executed for the first time on a machine, we ask you to make a choice about whether you'd like to send anonymized usage metrics to help us make the product better. To make this election non-interactively, you can run either:
+When the Kurtosis CLI is executed for the first time on a machine, we ask you to make a choice about whether [you'd like to send anonymized usage metrics to help us make the product better](./metrics-philosophy.md). To make this election non-interactively, you can run either:
 ```
 kurtosis config init send-metrics
 ```
@@ -12,6 +12,27 @@ to send anonymized metrics to improve the product or
 kurtosis config init dont-send-metrics
 ```
 if you'd prefer not to.
+
+### Start the engine
+The CLI functions through calls to the Kurtosis engine, which is a very lightweight container. The CLI will start the engine container automatically for you so you should never need to start it manually, but you can do so if you please:
+
+```
+kurtosis engine start
+```
+
+### Check engine status
+The engine's version and status can be printed with:
+
+```
+kurtosis engine status
+```
+
+### Stop the engine
+To stop the engine, run:
+
+```
+kurtosis engine stop
+```
 
 ### Create an enclave
 The environments in Kurtosis that house your containers are called "enclaves". They are isolated from each other, to ensure they don't interfere with each other. To create a new, empty enclave, run:
@@ -90,13 +111,15 @@ kurtosis module exec $THE_MODULE_IMAGE
 The module's behaviour can be customized with the optional `--load-params` and `--execute-params` flags.
 
 ### Remove old artifacts from Kurtosis
-Kurtosis defaults to leaving containers, volumes, etc. around so that you can refer back them for debugging. To clean up artifacts from stopped enclaves, run:
+Kurtosis defaults to leaving enclave artifacts (containers, volumes, etc.) around so that you can refer back them for debugging. To clean up artifacts from stopped enclaves, run:
 
 ```
 kurtosis clean
 ```
 
-To remove _everything_ in the Kurtosis engine, add the `-a`/`--all` flag.
+To remove artifacts from _all_ enclaves (including running ones), add the `-a`/`--all` flag.
+
+NOTE: This will not stop the Kurtosis engine itself! To do so, see "Stopping the engine" above.
 
 ---
 
