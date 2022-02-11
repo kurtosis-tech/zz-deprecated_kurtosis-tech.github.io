@@ -104,11 +104,28 @@ kurtosis service shell $THE_ENCLAVE_ID $THE_SERVICE_ID
 ### Execute a module
 For ease-of-use, the Kurtosis CLI provides a single command to 1) create an enclave 2) load a [module][modules] inside it and 3) execute the module. This command is:
 
-```
+```bash
 kurtosis module exec $THE_MODULE_IMAGE
 ```
 
-The module's behaviour can be customized with the optional `--load-params` and `--execute-params` flags.
+The module's behaviour can be customized with the optional `--load-params` and `--execute-params` flags that are specific to the module. For convenience, we recommend putting the params into a file so you can get syntax highlighting and then using [command substitution](https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html) to `cat` the file contents.
+
+For example:
+
+Some module params, stored in `/tmp/my-module-params.json` so that I get syntax highlighting:
+
+```javascript
+{
+    "someProperty": "someValue",
+    "someOtherProperty": 4
+}
+```
+
+The `kurtosis` command to slot those params into the module using command substitution:
+
+```bash
+kurtosis module exec $THE_MODULE_IMAGE --execute-params "$(cat /tmp/my-module-params.json)"
+```
 
 ### Remove old artifacts from Kurtosis
 Kurtosis defaults to leaving enclave artifacts (containers, volumes, etc.) around so that you can refer back them for debugging. To clean up artifacts from stopped enclaves, run:
