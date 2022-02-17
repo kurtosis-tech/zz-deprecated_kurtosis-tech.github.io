@@ -9,6 +9,19 @@ Installation
 brew install kurtosis-tech/tap/kurtosis-cli
 ```
 
+NOTE: Homebrew might warn you that your Xcode is outdated, like so:
+
+```
+Error: Your Xcode (11.5) is too outdated.
+Please update to Xcode 12.5 (or delete it).
+```
+
+[This is a Homebrew requirement](https://docs.brew.sh/Installation), and has nothing to do with Kurtosis (which ships as prebuilt binaries). To update your Xcode, run:
+
+```
+xcode-select --install
+```
+
 ### apt
 ```
 echo "deb [trusted=yes] https://apt.fury.io/kurtosis-tech/ /" | sudo tee /etc/apt/sources.list.d/kurtosis.list
