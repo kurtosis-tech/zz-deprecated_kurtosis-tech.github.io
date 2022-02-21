@@ -1,6 +1,8 @@
 Installing & Upgrading
 ======================
-[Interacting with Kurtosis][using-the-cli] is done via a CLI. The following methods are currently supported:
+[Interacting with Kurtosis][using-the-cli] is done via a CLI; the instructions below will walk you through installing it.
+
+**TIP:** The CLI supports tab completion. After you install using one of the methods below, follow [these instructions](./adding-tab-completion.md) to enable tab completion.
 
 Installation
 ------------
