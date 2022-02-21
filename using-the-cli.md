@@ -2,6 +2,8 @@ Using the CLI
 =============
 The [Kurtosis CLI][cli-installation] is the main way you will interact with Kurtosis. This document will walk you through some common CLI workflows.
 
+**TIP:** Kurtosis supports tab-completion. To add it, [follow these instructions](./adding-tab-completion.md).
+
 ### Initialize configuration
 When the Kurtosis CLI is executed for the first time on a machine, we ask you to make a choice about whether [you'd like to send anonymized usage metrics to help us make the product better](./metrics-philosophy.md). To make this election non-interactively, you can run either:
 ```
