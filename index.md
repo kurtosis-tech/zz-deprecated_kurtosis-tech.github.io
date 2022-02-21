@@ -8,21 +8,26 @@ For those who like to jump in and see things running, head over to [the quicksta
 
 For Q&A, head over to the [Kurtosis Discord](https://discord.gg/6Jjp9c89z9) server.
 
+Getting Started
 * [Quickstart][quickstart]
 * [Installation][installation-and-upgrading]
-* [Our Metrics Philosophy][metrics-philosophy]
+* [Adding Tab Completion][adding-tab-completion]
 * [Using the CLI][using-the-cli]
+* [Our Metrics Philosophy][metrics-philosophy]
 * [Debugging common failure scenarios](./debugging-failed-tests.md)
 * [Architecture][architecture]
 
 Beyond The Basics
 -----------------
-* [Running Kurtosis in CI](./running-in-ci.md)
 * [Kurtosis Sandbox](./sandbox.md)
 * [Kurtosis Modules](./modules.md)
 * [Advanced Usage](./advanced-usage.md)
-* [Kurtosis Core API Documentation](./kurtosis-core/lib-documentation)
-* [Kurtosis Engine API Documentation](./kurtosis-engine-server/lib-documentation)
+
+Reference Docs
+--------------
+* [Running Kurtosis in CI](./running-in-ci.md)
+* [kurtosis-engine-api-lib (KurtosisContext) Documentation](./kurtosis-engine-server/lib-documentation)
+* [kurtosis-core-api-lib (EnclaveContext) Documentation](./kurtosis-core/lib-documentation)
 
 Upgrading Kurtosis
 ------------------
@@ -53,6 +58,7 @@ docker stop $(docker ps -a --quiet --filter ancestor="YOUR-IMAGE-NAME" --format=
 ```
 
 [quickstart]: https://github.com/kurtosis-tech/kurtosis-onboarding-experience/tree/master#kurtosis-ethereum-quickstart
+[adding-tab-completion]: ./adding-tab-completion.md
 [metrics-philosophy]: ./metrics-philosophy.md
 [architecture]: ./architecture.md
 [installation-and-upgrading]: ./installation.md
