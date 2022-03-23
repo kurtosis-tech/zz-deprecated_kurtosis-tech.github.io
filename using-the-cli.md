@@ -135,6 +135,8 @@ Services can be deleted from an enclave like so:
 kurtosis service rm $THE_ENCLAVE_ID $THE_SERVICE_ID
 ```
 
+**NOTE:** To avoid destroying debugging information, Kurtosis will leave removed services inside the Docker engine. They will be stopped and won't show up in the list of active services in the enclave, but you'll still be able to access them (e.g. using `service logs`) by their service GUID (available via `enclave inspect`).
+
 ### Execute a module
 For ease-of-use, the Kurtosis CLI provides a single command to 1) create an enclave 2) load a [module][modules] inside it and 3) execute the module. This command is:
 
