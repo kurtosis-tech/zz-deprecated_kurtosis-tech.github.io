@@ -19,7 +19,6 @@ Getting Started
 
 Beyond The Basics
 -----------------
-* [Kurtosis Sandbox](./sandbox.md)
 * [Kurtosis Modules](./modules.md)
 * [Advanced Usage](./advanced-usage.md)
 
