@@ -1,12 +1,11 @@
 ![](./images/horizontal-logo.jpg)
 
-[Kurtosis](https://www.kurtosistech.com) is a platform for orchestrating distributed system environments, allowing easy creation and manipulation of stage-appropriate deployments across the development cycle.
+[Kurtosis](https://www.kurtosistech.com) is a platform for orchestrating distributed system environments, allowing easy creation and manipulation of stage-appropriate deployments across in the early stages of the development cycle (prototyping, testing).
 
 Use cases for Kurtosis include:
 * Enable individual developers to prototype on personal development environments without messing with environment setup and configuration
 * Enable development teams to run automated end-to-end tests for distributed systems, including fault tolerance tests in servers and networks, load testing, performance testing, etc.
-* Enable development teams to deploy preview and staging environments for user acceptance testing
-* Enable developers to easily debug failing distributed systems across every part of the development cycle
+* Enable developers to easily debug failing distributed systems during development
 
 Getting Started
 ---------------
