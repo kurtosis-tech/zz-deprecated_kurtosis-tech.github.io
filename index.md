@@ -1,6 +1,12 @@
 ![](./images/horizontal-logo.jpg)
 
-[Kurtosis](https://www.kurtosistech.com) is a platform for running whole-system tests against distributed systems with the frequency and repeatability of unit tests.
+[Kurtosis](https://www.kurtosistech.com) is a platform for orchestrating distributed system environments, allowing easy creation and manipulation of stage-appropriate deployments across the development cycle.
+
+Use cases for Kurtosis include:
+* Enable individual developers to prototype on personal development environments without messing with environment setup and configuration
+* Enable development teams to run automated end-to-end tests for distributed systems, including fault tolerance tests in servers and networks, load testing, performance testing, etc.
+* Enable development teams to deploy preview and staging environments for user acceptance testing
+* Enable developers to easily debug failing distributed systems across every part of the development cycle
 
 Getting Started
 ---------------
@@ -38,10 +44,17 @@ Upgrading Kurtosis
 
 Why Kurtosis?
 -------------
-The world is moving to microservices and systems are becoming increasingly complex. The more components a system has, the more [emergent phenomena](https://en.wikipedia.org/wiki/Emergence) and [unexpected outlier events](https://en.wikipedia.org/wiki/Black_swan_theory) that occur. More components equal more difficulty running a representative system, and more corners cut when testing. If nothing is done, testing will continue to decline and unpredictability will continue to rise. Engineers need a new tool to tame the complexity of the distributed age, that marries the ease and safety of unit tests with the representativeness of testing in production. Kurtosis is that tool.
+
+Container management and container orchestration systems like Docker and Kubernetes are each great at serving developers in different parts of the development cycle (development for Docker, production for Kubernetes). These, and other distributed system deployment tools, are low-level and stage-specific tools that require teams of DevOps engineers to manage. When applied across the entire development cycle, where many versions of a distributed system environment must be managed, these tools end up incurring a massive amount of maintenance burden and limit capabilties because of their design.
+
+Kurtosis is designed to optimize **environment** management and control across the development cycle - operating at one level of abstraction higher than existing tools, giving developers the environments and the ability to manipulate them that they need at each stage.
+
+![](./images/kurtosis-utility.png)
+
+With Kurtosis, developers can build with local sandbox environments that really demonstrate how their code will work when integrated with the rest of the system. In addition, advanced end-to-end testing workflows are available to teams using the manipulation tooling in the Kurtosis engine runtime which allow them to do end-to-end testing like fault-tolerance, regression, and performance tests.
 
 
-Local Development Tips
+Local Development Tips With Docker
 ----------------------
 ### Docker Volumes
 Kurtosis will create several Docker volumes during the course of normal operation. These are intentionally not deleted after testsuite execution finishes, so that you can explore the volumes for debugging information. This means Docker volumes will slowly accumulate on your system, and you'll want to periodically clear them out. To do so, you can use `docker volume ls` to view existing volumes and identify the ones you'd like to remove, then `docker volume rm THE_VOLUME_ID` to remove them.
