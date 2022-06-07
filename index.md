@@ -45,7 +45,7 @@ Why Kurtosis?
 
 Container management and container orchestration systems like Docker and Kubernetes are each great at serving developers in different parts of the development cycle (development for Docker, production for Kubernetes). These, and other distributed system deployment tools, are low-level and stage-specific tools that require teams of DevOps engineers to manage. When applied across the entire development cycle, where many versions of a distributed system environment must be managed, these tools end up incurring a massive amount of maintenance burden and limit capabilties because of their design.
 
-Kurtosis is designed to optimize **environment** management and control across the development cycle - operating at one level of abstraction higher than existing tools, giving developers the environments and the ability to manipulate them that they need at each stage.
+Kurtosis is designed to optimize **environment** management and control across the development cycle - operating at one level of abstraction higher than existing tools, giving developers the environments and the ability to manipulate them as needed at each stage.
 
 ![](./images/kurtosis-utility.png)
 
