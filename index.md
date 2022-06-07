@@ -26,7 +26,6 @@ Getting Started
 Beyond The Basics
 -----------------
 * [Kurtosis Modules](./modules.md)
-* [Advanced Usage](./advanced-usage.md)
 
 Reference Docs
 --------------
