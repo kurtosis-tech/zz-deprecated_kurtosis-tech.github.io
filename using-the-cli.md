@@ -137,6 +137,24 @@ kurtosis service rm $THE_ENCLAVE_ID $THE_SERVICE_ID
 
 **NOTE:** To avoid destroying debugging information, Kurtosis will leave removed services inside the Docker engine. They will be stopped and won't show up in the list of active services in the enclave, but you'll still be able to access them (e.g. using `service logs`) by their service GUID (available via `enclave inspect`).
 
+### Run a Starlark script or module
+Run a Starlark module or script in an enclave. 
+
+```bash
+kurtosis run $SCRIPT_PATH --enclave-id $THE_ENCLAVE_ID --args $MODULE_ARGS --with-partitioning --dry-run
+```
+
+For a script we expect a path to a `.star` file. For a module we expect path to a directory containing `kurtosis.yml` or a fully qualified Github repository path containing a module.
+
+If the enclave-id flag argument is provided, Kurtosis will run the script inside this enclave, or create it if it doesn't exist. If no enclave-id param is provided, Kurtosis will create a new enclave with a random name.
+
+You can use the `--args` to send the module's arguments to the Kurtosis module when running it. It is expected to be a serialized JSON string. Note that if a standalone Kurtosis script is being run, no parameter should be passed.
+
+You can enable the network partitioning feature for the created enclave with the `--with-partitioning` flag
+
+If the `--dry-run` flag is set true, the Kurtosis instructions will not be executed, they will just be printed to the output of the CLI
+
+
 ### Execute a module
 For ease-of-use, the Kurtosis CLI provides a single command to 1) create an enclave 2) load a module inside it and 3) execute the module. This command is:
 
@@ -144,7 +162,7 @@ For ease-of-use, the Kurtosis CLI provides a single command to 1) create an encl
 kurtosis module exec $THE_MODULE_IMAGE
 ```
 
-The module's behaviour can be customized with the optional `--load-params` and `--execute-params` flags that are specific to the module. For convenience, we recommend putting the params into a file so you can get syntax highlighting and then using [command substitution](https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html) to `cat` the file contents.
+The module's behaviour can be customized with the optional `--load-params` and `--execute-params` flags that are specific to the module. For convenience, we recommend putting the params into a file, so you can get syntax highlighting and then using [command substitution](https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html) to `cat` the file contents.
 
 For example:
 
