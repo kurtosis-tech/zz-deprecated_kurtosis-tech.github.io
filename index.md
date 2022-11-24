@@ -30,8 +30,8 @@ Reference Docs
 --------------
 * [Glossary](./glossary.md)
 * [Running Kurtosis in CI](./running-in-ci.md)
-* [kurtosis-engine-api-lib (KurtosisContext) Documentation](./kurtosis-engine-server/lib-documentation)
-* [kurtosis-core-api-lib (EnclaveContext) Documentation](./kurtosis-core/lib-documentation)
+* [kurtosis-engine-api-lib (KurtosisContext) Documentation](./kurtosis/engine-lib-documentation)
+* [kurtosis-core-api-lib (EnclaveContext) Documentation](./kurtosis/core-lib-documentation)
 
 Upgrading Kurtosis
 ------------------

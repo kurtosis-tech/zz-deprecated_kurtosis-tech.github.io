@@ -35,6 +35,11 @@ workflows:
                         "pattern": "^./kurtosis-testsuite-api-lib", 
                         "replacement": "https://docs.kurtosistech.com/kurtosis-testsuite-api-lib"
                     }
+                    { 
+                        "pattern": "^./kurtosis",
+                        "replacement": "https://docs.kurtosistech.com/kurtosis"
+                    },                    
+
                 ]
             }
           filters:
