@@ -22,10 +22,6 @@ Getting Started
 * [Debugging common failure scenarios](./debugging-failed-tests.md)
 * [Architecture][architecture]
 
-Beyond The Basics
------------------
-* [Kurtosis Modules](./modules.md)
-
 Reference Docs
 --------------
 * [Glossary](./glossary.md)
