@@ -75,4 +75,4 @@ Example
 
 [installation]: ./installation.md
 
-[engine-api-docs]: ./kurtosis-engine-server/lib-documentation
+[engine-api-docs]: ./kurtosis/engine-lib-documentation
