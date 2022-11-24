@@ -36,9 +36,7 @@ Reference Docs
 Upgrading Kurtosis
 ------------------
 * [Upgrading][installation-and-upgrading]
-* [Kurtosis CLI Changelog](./kurtosis-cli/changelog)
-* [Kurtosis Core Changelog](./kurtosis-core/changelog)
-* [Kurtosis Engine Changelog](./kurtosis-engine-server/changelog)
+* [Kurtosis](./kurtosis/changelog)
 
 Why Kurtosis?
 -------------

@@ -54,7 +54,7 @@ If you're running the CLI in a CI environment, see [these instructions](./runnin
 
 Upgrading
 ---------
-You can check the version of the CLI you're running with `kurtosis version`. To upgrade to latest, check [the changelog to see if there are any breaking changes][cli-changelog] and follow the steps below. 
+You can check the version of the CLI you're running with `kurtosis version`. To upgrade to latest, check [the changelog to see if there are any breaking changes][changelog] and follow the steps below. 
 
 NOTE: if you're upgrading the CLI's minor version (the `Y` in a `X.Y.Z` version), you may need to restart your Kurtosis engine after the upgrade. If this is needed, the Kurtosis CLI will prompt you with an error like so:
 ```
@@ -91,4 +91,4 @@ Download the appropriate artifact from [the release artifacts page][release-arti
 [lib-documentation]: ./kurtosis-client/lib-documentation
 [quickstart]: https://github.com/kurtosis-tech/kurtosis-onboarding-experience/tree/master#kurtosis-ethereum-quickstart
 [release-artifacts]: https://github.com/kurtosis-tech/kurtosis-cli-release-artifacts/releases
-[cli-changelog]: ./kurtosis-cli/changelog
+[changelog]: ./kurtosis/changelog
