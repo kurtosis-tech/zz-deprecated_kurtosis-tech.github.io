@@ -78,5 +78,5 @@ The API that a module must implement is defined in [the module API lib](https://
 
 
 <!---------------------------- ONLY LINKS BELOW HERE --------------------------->
-[kurtosis-core_enclave-context]: ./kurtosis-core/lib-documentation
+[kurtosis-core_enclave-context]: ./kurtosis/core-lib-documentation
 [using-the-cli]: ./using-the-cli.md
